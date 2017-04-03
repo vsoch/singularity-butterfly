@@ -15,3 +15,8 @@ The [generate_image.sh](generate_image.sh) script simply creates a container, an
 singularity create --size 4000 butterfly.img
 sudo singularity bootstrap butterfly.img Singularity
 ```
+
+Then to run
+```bash
+singularity run -B /tmp:/run/user/1000/dconf butterfly.img
+```
