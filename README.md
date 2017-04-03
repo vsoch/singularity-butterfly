@@ -12,6 +12,6 @@ cd singularity-butterfly
 The [generate_image.sh](generate_image.sh) script simply creates a container, and does a bootstrap to install butterfly.
 
 ```bash
-singularity create butterfly.img
+singularity create --size 4000 butterfly.img
 sudo singularity bootstrap butterfly.img Singularity
 ```
